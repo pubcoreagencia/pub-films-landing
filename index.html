@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PUB FILMS | Narrativas visuais para marcas</title>
+    <meta
+      name="description"
+      content="A PUB FILMS cria vídeos, campanhas e conteúdos audiovisuais para empresas que precisam transformar mensagem em imagem, presença e lembrança."
+    />
+    <meta name="theme-color" content="#050506" />
+    <meta property="og:title" content="PUB FILMS | Narrativas visuais para marcas" />
+    <meta
+      property="og:description"
+      content="Produção audiovisual com direção, ritmo e intenção para marcas, negócios e projetos."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <div class="preloader" aria-hidden="true">
+      <div class="preloader__frame">
+        <span class="rec-dot"></span>
+        <span class="preloader__label">REC</span>
+        <span class="preloader__time" id="preloadTime">00:00:00:00</span>
+      </div>
+      <div class="preloader__brand">PUB FILMS</div>
+      <div class="preloader__track">
+        <span></span>
+      </div>
+    </div>
+
+    <div class="focus-cursor" aria-hidden="true"></div>
+    <div class="scroll-rail" aria-hidden="true">
+      <span class="scroll-rail__label">TIMELINE</span>
+      <span class="scroll-progress"></span>
+    </div>
+
+    <header class="site-header" data-reveal>
+      <a class="brand" href="#topo" aria-label="PUB FILMS, voltar ao início">
+        <span class="brand__mark">PUB</span>
+        <span class="brand__line"></span>
+        <span class="brand__name">FILMS</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+      <nav class="site-nav" id="siteNav" aria-label="Navegação principal">
+        <a href="#visao">Visão</a>
+        <a href="#takes">Takes</a>
+        <a href="#processo">Processo</a>
+        <a href="#showreel">Showreel</a>
+        <a class="nav-cta" href="#contato">Iniciar</a>
+      </nav>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero scene" id="topo" aria-labelledby="heroTitle">
+        <div class="scene-noise" aria-hidden="true"></div>
+        <div class="viewfinder" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <canvas class="lens-canvas" id="lensCanvas" width="900" height="900" aria-hidden="true"></canvas>
+
+        <div class="hero__frames" aria-hidden="true">
+          <span class="floating-frame frame-a"></span>
+          <span class="floating-frame frame-b"></span>
+          <span class="floating-frame frame-c"></span>
+        </div>
+
+        <div class="hero__content">
+          <div class="eyebrow">
+            <span class="rec-dot"></span>
+            <span>PUB HOLDING / AUDIOVISUAL</span>
+            <span class="timecode" id="heroTime">00:00:00:00</span>
+          </div>
+          <h1 id="heroTitle">Sua marca precisa ser vista. Mas, antes disso, precisa ser sentida.</h1>
+          <p>
+            A PUB FILMS cria vídeos, campanhas e conteúdos audiovisuais para empresas que
+            precisam transformar mensagem em imagem, presença e lembrança.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary magnetic" href="#contato">
+              <span>Criar meu projeto audiovisual</span>
+            </a>
+            <a class="button button--ghost magnetic" href="#takes">
+              <span>Ver possibilidades</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__meta" aria-label="Áreas de atuação">
+          <span>Drone</span>
+          <span>Institucional</span>
+          <span>Campanhas</span>
+          <span>Pós-produção</span>
+        </div>
+      </section>
+
+      <section class="scene scene--split" id="visao" aria-labelledby="problemTitle">
+        <div class="scene-label" data-reveal>CENA 01 / O RUÍDO</div>
+        <div class="split-copy" data-reveal>
+          <p class="section-kicker">Antes do corte</p>
+          <h2 id="problemTitle">Nem todo vídeo constrói presença. Alguns só ocupam espaço.</h2>
+          <p>
+            Muitas marcas publicam conteúdo, mas poucas constroem percepção. Sem direção,
+            ritmo e narrativa, a imagem não sustenta a mensagem.
+          </p>
+        </div>
+        <div class="discard-grid" aria-label="Problemas comuns em conteúdo audiovisual">
+          <article class="discard-card" data-reveal>
+            <span>TAKE DESCARTADO</span>
+            <strong>Conteúdo sem direção</strong>
+            <p>Peças soltas, sem intenção clara, não criam memória nem confiança.</p>
+          </article>
+          <article class="discard-card" data-reveal>
+            <span>SEM RITMO</span>
+            <strong>Edição que não segura atenção</strong>
+            <p>O público entende rápido quando a imagem não acompanha a mensagem.</p>
+          </article>
+          <article class="discard-card" data-reveal>
+            <span>FRAME FRACO</span>
+            <strong>Marca sem presença visual</strong>
+            <p>A qualidade do negócio precisa aparecer antes mesmo da explicação.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="scene scene--solution" aria-labelledby="solutionTitle">
+        <div class="cut-line" aria-hidden="true"></div>
+        <div class="solution-copy" data-reveal>
+          <p class="section-kicker">Direção de cena</p>
+          <h2 id="solutionTitle">A PUB FILMS transforma mensagem em cena.</h2>
+          <p>
+            Unimos direção criativa, captação, drone, edição e estratégia visual para criar
+            conteúdos que apresentam melhor uma marca, explicam uma ideia e aumentam a
+            percepção de valor.
+          </p>
+        </div>
+        <div class="layer-stack" aria-label="Camadas do trabalho audiovisual">
+          <div class="layer-card layer-card--idea" data-reveal>
+            <span>01</span>
+            <strong>Ideia</strong>
+            <p>Objetivo, público, mensagem e intenção visual.</p>
+          </div>
+          <div class="layer-card layer-card--capture" data-reveal>
+            <span>02</span>
+            <strong>Captação</strong>
+            <p>Imagem, movimento, drone, entrevista e ambiente.</p>
+          </div>
+          <div class="layer-card layer-card--edit" data-reveal>
+            <span>03</span>
+            <strong>Edição</strong>
+            <p>Ritmo, corte, trilha, formatos e finalização.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene scene--takes" id="takes" aria-labelledby="takesTitle">
+        <div class="section-head" data-reveal>
+          <p class="section-kicker">Serviços como takes</p>
+          <h2 id="takesTitle">Produções pensadas para presença, campanha e lembrança.</h2>
+        </div>
+
+        <div class="take-grid">
+          <article class="take-card" data-reveal>
+            <span class="take-index">TAKE 01</span>
+            <h3>Vídeos institucionais</h3>
+            <p>Empresas, serviços, espaços, equipes e diferenciais apresentados com clareza.</p>
+            <span class="take-time">00:04:12</span>
+          </article>
+          <article class="take-card" data-reveal>
+            <span class="take-index">TAKE 02</span>
+            <h3>Captação com drone</h3>
+            <p>Imagens aéreas para imóveis, turismo, obras, eventos e conteúdos de impacto.</p>
+            <span class="take-time">00:07:38</span>
+          </article>
+          <article class="take-card" data-reveal>
+            <span class="take-index">TAKE 03</span>
+            <h3>Conteúdo para redes sociais</h3>
+            <p>Reels, cortes, anúncios e peças para uma presença digital contínua.</p>
+            <span class="take-time">00:11:06</span>
+          </article>
+          <article class="take-card" data-reveal>
+            <span class="take-index">TAKE 04</span>
+            <h3>Anúncios e campanhas</h3>
+            <p>Vídeos para prender atenção, comunicar uma oferta e sustentar campanhas.</p>
+            <span class="take-time">00:15:44</span>
+          </article>
+          <article class="take-card" data-reveal>
+            <span class="take-index">TAKE 05</span>
+            <h3>Branded content</h3>
+            <p>Conteúdos com narrativa, estética e intenção para aproximar marcas do público.</p>
+            <span class="take-time">00:18:20</span>
+          </article>
+          <article class="take-card" data-reveal>
+            <span class="take-index">TAKE 06</span>
+            <h3>Videoclipes e projetos artísticos</h3>
+            <p>Direção visual para músicas, artistas, performances e ideias criativas.</p>
+            <span class="take-time">00:22:09</span>
+          </article>
+          <article class="take-card" data-reveal>
+            <span class="take-index">TAKE 07</span>
+            <h3>Edição e pós-produção</h3>
+            <p>Montagem, ritmo, correção, motion, finalização e adaptação de formatos.</p>
+            <span class="take-time">00:26:31</span>
+          </article>
+          <article class="take-card" data-reveal>
+            <span class="take-index">TAKE 08</span>
+            <h3>Cobertura audiovisual</h3>
+            <p>Eventos, bastidores, ativações, lançamentos e experiências presenciais.</p>
+            <span class="take-time">00:31:12</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="scene scene--process" id="processo" aria-labelledby="processTitle">
+        <div class="section-head" data-reveal>
+          <p class="section-kicker">Método de produção</p>
+          <h2 id="processTitle">Do briefing ao corte final.</h2>
+        </div>
+
+        <div class="edit-suite" data-reveal>
+          <div class="edit-suite__topbar">
+            <span>PUB_FILMS_SEQUENCE_01</span>
+            <span>24 FPS</span>
+            <span>REC READY</span>
+          </div>
+          <ol class="process-list">
+            <li>
+              <span class="process-number">01</span>
+              <strong>Direção</strong>
+              <p>Objetivo, público, mensagem, referências e intenção visual.</p>
+            </li>
+            <li>
+              <span class="process-number">02</span>
+              <strong>Roteiro</strong>
+              <p>Narrativa, formato, cenas, entregáveis e plano de produção.</p>
+            </li>
+            <li>
+              <span class="process-number">03</span>
+              <strong>Captação</strong>
+              <p>Filmagem, drone, apoio, entrevistas, produtos, ambientes e cenas planejadas.</p>
+            </li>
+            <li>
+              <span class="process-number">04</span>
+              <strong>Edição</strong>
+              <p>Ritmo, seleção de takes, montagem, trilha, cortes e versões.</p>
+            </li>
+            <li>
+              <span class="process-number">05</span>
+              <strong>Finalização</strong>
+              <p>Formatos para redes, anúncios, apresentações, campanhas e entrega.</p>
+            </li>
+          </ol>
+          <div class="timeline" aria-hidden="true">
+            <span class="playhead"></span>
+            <span class="clip clip-a"></span>
+            <span class="clip clip-b"></span>
+            <span class="clip clip-c"></span>
+            <span class="waveform"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene scene--audience" aria-labelledby="audienceTitle">
+        <div class="split-copy" data-reveal>
+          <p class="section-kicker">Para quem é</p>
+          <h2 id="audienceTitle">Para marcas que têm algo a mostrar, mas precisam mostrar melhor.</h2>
+        </div>
+        <div class="audience-strip" data-reveal>
+          <span>Empresas</span>
+          <span>Negócios locais</span>
+          <span>Imobiliárias</span>
+          <span>Pousadas</span>
+          <span>Restaurantes</span>
+          <span>Clínicas</span>
+          <span>Artistas</span>
+          <span>Eventos</span>
+          <span>Campanhas</span>
+          <span>Conteúdo recorrente</span>
+        </div>
+      </section>
+
+      <section class="scene scene--showreel" id="showreel" aria-labelledby="showreelTitle">
+        <div class="section-head" data-reveal>
+          <p class="section-kicker">Showreel preparado</p>
+          <h2 id="showreelTitle">Uma grade pronta para receber cenas reais.</h2>
+          <p>
+            Sem inventar cases. A estrutura abaixo funciona como vitrine editável para projetos
+            institucionais, drone, campanhas, conteúdo social, videoclipe e branded content.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <button class="project-frame" type="button" data-project="Projeto 01 / Institucional" data-reveal>
+            <span class="project-frame__visual"></span>
+            <span class="project-frame__meta">
+              <strong>Projeto 01</strong>
+              <em>Institucional / 2026</em>
+            </span>
+            <span class="play-mark" aria-hidden="true"></span>
+          </button>
+          <button class="project-frame" type="button" data-project="Projeto 02 / Drone" data-reveal>
+            <span class="project-frame__visual project-frame__visual--drone"></span>
+            <span class="project-frame__meta">
+              <strong>Projeto 02</strong>
+              <em>Drone / 2026</em>
+            </span>
+            <span class="play-mark" aria-hidden="true"></span>
+          </button>
+          <button class="project-frame" type="button" data-project="Projeto 03 / Campanha" data-reveal>
+            <span class="project-frame__visual project-frame__visual--campaign"></span>
+            <span class="project-frame__meta">
+              <strong>Projeto 03</strong>
+              <em>Campanha / 2026</em>
+            </span>
+            <span class="play-mark" aria-hidden="true"></span>
+          </button>
+          <button class="project-frame" type="button" data-project="Projeto 04 / Conteúdo social" data-reveal>
+            <span class="project-frame__visual project-frame__visual--social"></span>
+            <span class="project-frame__meta">
+              <strong>Projeto 04</strong>
+              <em>Social / 2026</em>
+            </span>
+            <span class="play-mark" aria-hidden="true"></span>
+          </button>
+          <button class="project-frame" type="button" data-project="Projeto 05 / Videoclipe" data-reveal>
+            <span class="project-frame__visual project-frame__visual--clip"></span>
+            <span class="project-frame__meta">
+              <strong>Projeto 05</strong>
+              <em>Videoclipe / 2026</em>
+            </span>
+            <span class="play-mark" aria-hidden="true"></span>
+          </button>
+          <button class="project-frame" type="button" data-project="Projeto 06 / Branded content" data-reveal>
+            <span class="project-frame__visual project-frame__visual--brand"></span>
+            <span class="project-frame__meta">
+              <strong>Projeto 06</strong>
+              <em>Branded content / 2026</em>
+            </span>
+            <span class="play-mark" aria-hidden="true"></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="scene scene--differentials" aria-labelledby="diffTitle">
+        <div class="section-head" data-reveal>
+          <p class="section-kicker">Diferenciais</p>
+          <h2 id="diffTitle">Não é só filmar. É saber o que a imagem precisa construir.</h2>
+        </div>
+        <div class="diff-grid">
+          <article data-reveal>
+            <span>01</span>
+            <strong>Direção criativa aplicada ao objetivo</strong>
+          </article>
+          <article data-reveal>
+            <span>02</span>
+            <strong>Captação com olhar comercial e estético</strong>
+          </article>
+          <article data-reveal>
+            <span>03</span>
+            <strong>Drone como impacto, não enfeite</strong>
+          </article>
+          <article data-reveal>
+            <span>04</span>
+            <strong>Edição pensada em ritmo e retenção</strong>
+          </article>
+          <article data-reveal>
+            <span>05</span>
+            <strong>Conteúdo adaptado para diferentes canais</strong>
+          </article>
+          <article data-reveal>
+            <span>06</span>
+            <strong>Visão de marca, campanha e presença digital</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="scene scene--final" id="contato" aria-labelledby="ctaTitle">
+        <div class="final-frame" data-reveal>
+          <span class="final-time">00:59:59:24</span>
+          <p class="section-kicker">Cena final</p>
+          <h2 id="ctaTitle">Pronto para colocar sua marca em cena?</h2>
+          <p>
+            Conte para a PUB FILMS o que você precisa comunicar. A partir disso,
+            transformamos ideia, objetivo e mensagem em uma produção audiovisual com direção,
+            estética e intenção.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary magnetic" href="mailto:contato@pubfilms.com.br?subject=Projeto%20audiovisual%20PUB%20FILMS">
+              <span>Iniciar uma produção</span>
+            </a>
+            <a class="button button--ghost magnetic" href="#topo">
+              <span>Rever a sequência</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>PUB FILMS</span>
+      <span>Narrativas visuais com direção, ritmo e presença.</span>
+    </footer>
+
+    <div class="project-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+      <div class="project-modal__backdrop" data-close-modal></div>
+      <div class="project-modal__panel">
+        <button class="project-modal__close" type="button" data-close-modal aria-label="Fechar prévia">
+          ×
+        </button>
+        <span class="modal-kicker">SLOT DE VÍDEO</span>
+        <h2 id="modalTitle">Projeto</h2>
+        <div class="modal-player" aria-label="Espaço reservado para vídeo do projeto">
+          <span class="play-mark"></span>
+          <span class="modal-time">00:00:00:00</span>
+        </div>
+        <p>
+          Espaço preparado para thumbnail, player, descrição curta, formato, categoria e ano.
+          Quando os vídeos reais entrarem, esta estrutura vira o showreel oficial.
+        </p>
+      </div>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
