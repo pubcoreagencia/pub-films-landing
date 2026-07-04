@@ -1,24 +1,23 @@
 # PUB FILMS Landing Page
 
-Landing page cinematografica para a PUB FILMS, criada como site estatico premium em HTML, CSS e JavaScript.
+Landing page cinematográfica para a PUB FILMS, criada como site estático premium em HTML, CSS e JavaScript.
 
 ## Estrutura
 
-- `index.html`: conteudo e estrutura semantica da landing.
-- `styles.css`: direcao visual, responsividade, estados e animacoes.
-- `app.js`: preloader, timecode, canvas procedural, menu mobile, reveal on scroll e modal de showreel.
+- `index.html`: conteúdo e estrutura semântica da landing.
+- `styles.css`: direção visual, responsividade, estados e animações.
+- `app.js`: preloader, vídeos ambiente com lazy loading, Film Orbit 3D, menu mobile e reveal on scroll.
 
 ## Deploy no Cloudflare Pages
 
-Configuracao sugerida:
+Configuração sugerida:
 
 - Framework preset: None
 - Build command: vazio
 - Build output directory: `/`
 
-Tambem e possivel publicar diretamente com Wrangler:
+Também é possível publicar diretamente com Wrangler:
 
 ```bash
 wrangler pages deploy . --project-name pub-films-landing
 ```
-
